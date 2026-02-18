@@ -333,7 +333,7 @@ with st.sidebar:
     )
 
     st.divider()
-    st.header("About"
+    st.header("About")
 	st.caption("""
 ### 
 This application extracts parcel data from Romanian Land Registry PDFs (ANCPI / OCPI)
