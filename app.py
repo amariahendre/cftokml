@@ -358,8 +358,8 @@ If no coordinates are present in the document, the parcel cannot be converted in
 	•	Detect coordinate reference system (Stereo 70 → EPSG:3844)
 	
     3.	Generates:
-	✅  A clean, validated parcels.json
-	✅  A ready-to-use .kml file for Google Earth / GIS tools""")
+	✅  Clean, validated json and geojson files for GIS tools
+	✅  Ready-to-use .kml file for Google Earth""")
   
 
 uploaded = st.file_uploader(
