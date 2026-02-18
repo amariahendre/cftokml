@@ -333,20 +333,20 @@ with st.sidebar:
     )
 
     st.divider()
-    st.header("About")
-	st.caption(""" 
-	This application extracts parcel data from Romanian Land Registry PDFs (ANCPI / OCPI)
+    st.markdown("""
+### About
+This application extracts parcel data from Romanian Land Registry PDFs (ANCPI / OCPI)
 and generates structured JSON, GeoJSON and KML files.
 
-	⚠️ **Important limitation:**
-	The application works only if the uploaded extract contains boundary coordinates
+⚠️ **Important limitation:**
+The application works only if the uploaded extract contains boundary coordinates
 (“Detalii liniare imobil” / coordinate tables).  
 If no coordinates are present in the document, the parcel cannot be converted into KML/GeoJSON.
-	""")
+""")
 
     st.divider()
     st.header("What the app does")
-    st.caption("""
+    st.text("""
 	
     1.	Uploads one or multiple cadastral PDF documents (Land Book Extracts)
 	
@@ -358,7 +358,7 @@ If no coordinates are present in the document, the parcel cannot be converted in
 	•	Detect coordinate reference system (Stereo 70 → EPSG:3844)
 	
     3.	Generates:
-	✅  Clean, validated json and geojson files
+	✅  Clean, validated json and geojson files for GIS tools
 	✅  Ready-to-use .kml file for Google Earth""")
   
 
