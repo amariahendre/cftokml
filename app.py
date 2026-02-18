@@ -333,8 +333,9 @@ with st.sidebar:
     )
 
     st.divider()
-    st.caption("""
-### About
+    st.header("About"
+	st.caption("""
+### 
 This application extracts parcel data from Romanian Land Registry PDFs (ANCPI / OCPI)
 and generates structured JSON, GeoJSON and KML files.
 
